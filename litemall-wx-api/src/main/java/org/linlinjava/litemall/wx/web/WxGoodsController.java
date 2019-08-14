@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
+import org.linlinjava.litemall.core.system.SystemConfig;
 
 /**
  * 商品服务
@@ -93,7 +94,7 @@ public class WxGoodsController {
 		// 商品信息
 		LitemallGoods info = goodsService.findById(id);
 
-		// 商品属性
+		// 商品属性groupon
 		Callable<List> goodsAttributeListCallable = () -> goodsAttributeService.queryByGid(id);
 
 		// 商品规格 返回的是定制的GoodsSpecificationVo
@@ -185,6 +186,7 @@ public class WxGoodsController {
 			data.put("attribute", goodsAttributeListTask.get());
 			data.put("brand", brandCallableTask.get());
 			data.put("groupon", grouponRulesCallableTask.get());
+			data.put("share", SystemConfig.isAutoCreateShareImage());
 		}
 		catch (Exception e) {
 			e.printStackTrace();

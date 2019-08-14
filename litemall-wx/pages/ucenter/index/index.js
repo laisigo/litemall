@@ -59,63 +59,86 @@ Page({
     }
   },
   goOrder() {
-    if (this.data.hasLogin) {
-      try {
-        wx.setStorageSync('tab', 0);
-      } catch (e) {
+    wx.showToast({
+      title: '暂未开放',
+      icon: 'none',
+      duration: 2000
+    });
 
-      }
-      wx.navigateTo({
-        url: "/pages/ucenter/order/order"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    }
+    // if (this.data.hasLogin) {
+    //   try {
+    //     wx.setStorageSync('tab', 0);
+    //   } catch (e) {
+
+    //   }
+    //   wx.navigateTo({
+    //     url: "/pages/ucenter/order/order"
+    //   });
+    // } else {
+    //   wx.navigateTo({
+    //     url: "/pages/auth/login/login"
+    //   });
+    // }
   },
   goOrderIndex(e) {
-    if (this.data.hasLogin) {
-      let tab = e.currentTarget.dataset.index
-      let route = e.currentTarget.dataset.route
-      try {
-        wx.setStorageSync('tab', tab);
-      } catch (e) {
+    wx.showToast({
+      title: '暂未开放',
+      icon: 'none',
+      duration: 2000
+    });
 
-      }
-      wx.navigateTo({
-        url: route,
-        success: function(res) {},
-        fail: function(res) {},
-        complete: function(res) {},
-      })
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
+
+    // if (this.data.hasLogin) {
+    //   let tab = e.currentTarget.dataset.index
+    //   let route = e.currentTarget.dataset.route
+    //   try {
+    //     wx.setStorageSync('tab', tab);
+    //   } catch (e) {
+
+    //   }
+    //   wx.navigateTo({
+    //     url: route,
+    //     success: function(res) {},
+    //     fail: function(res) {},
+    //     complete: function(res) {},
+    //   })
+    // } else {
+    //   wx.navigateTo({
+    //     url: "/pages/auth/login/login"
+    //   });
+    // };
   },
   goCoupon() {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/ucenter/couponList/couponList"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
+    wx.showToast({
+      title: '暂未开放',
+      icon: 'none',
+      duration: 2000
+    });
+    // if (this.data.hasLogin) {
+    //   wx.navigateTo({
+    //     url: "/pages/ucenter/couponList/couponList"
+    //   });
+    // } else {
+    //   wx.navigateTo({
+    //     url: "/pages/auth/login/login"
+    //   });
+    // };
   },
   goGroupon() {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/groupon/myGroupon/myGroupon"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
+    wx.showToast({
+      title: '暂未开放',
+      icon: 'none',
+      duration: 2000
+    });
+    // if (this.data.hasLogin) {
+    //   wx.navigateTo({
+    //     url: "/pages/groupon/myGroupon/myGroupon"
+    //   });
+    // } else {
+    //   wx.navigateTo({
+    //     url: "/pages/auth/login/login"
+    //   });
+    // };
   },
   goCollect() {
     if (this.data.hasLogin) {

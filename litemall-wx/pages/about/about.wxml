@@ -3,13 +3,14 @@
   <view class="about-item">
 
     <view class="item-left">
-      <label>项目名称: </label>
-       <text>{{shopInfo.name}}</text> 
+      <label>名称: </label>
+      <!-- <text>{{shopInfo.name}}</text> -->
+      <text>惠万家</text>
     </view>
 
   </view>
 
-  <view class="about-item">
+  <!--<view class="about-item">
     <view class="item-left">
       <label>项目地址: </label>
        <text>{{shopInfo.address}}</text> 
@@ -19,17 +20,19 @@
       <image src="/static/images/ico-addr.png" class="right-icon"></image>
     </view>
   </view>
+  -->
 
   <view class="about-item">
     <view class="item-left">
       <label>电话号码:    </label>
-       <text>{{shopInfo.linkPhone}}</text> 
+       <text>18025699780</text> 
     </view>
     <view class="item-right" bindtap="callPhone">
       <image src="/static/images/telephone.png" class="right-icon"></image>
     </view>
   </view>
 
+<!--
   <view class="about-item">
     <view class="item-left">
       <label>QQ交流群: </label>
@@ -39,7 +42,7 @@
       <image src="/static/images/mobile.png" class="right-icon"></image>
     </view>
   </view>
-
+-->
   <view class="about-item">
     <view class="item-left">
       <label>当前版本: </label>
@@ -49,8 +52,8 @@
 
   <view class="about-item">
     <view class="item-left">
-      <label>开源协议: </label>
-       <text>MIT</text> 
+      <label>描述: </label>
+       <text>当前版本暂不支持在线支付等功能</text> 
     </view>
   </view>
 

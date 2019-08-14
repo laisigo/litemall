@@ -41,7 +41,7 @@
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
-    "navigationBarTitleText": "litemall小程序商城",
+    "navigationBarTitleText": "惠万家",
     "enablePullDownRefresh": true,
     "navigationBarTextStyle": "black",
     "backgroundColor": "#FFFFFF",
@@ -66,10 +66,10 @@
         "text": "分类"
       },
       {
-        "pagePath": "pages/cart/cart",
-        "iconPath": "static/images/cart.png",
-        "selectedIconPath": "static/images/cart@selected.png",
-        "text": "购物车"
+        "pagePath": "pages/ucenter/collect/collect",
+        "iconPath": "static/images/icon_collect.png",
+        "selectedIconPath": "static/images/icon_collect_checked.png",
+        "text": "收藏"
       },
       {
         "pagePath": "pages/ucenter/index/index",
