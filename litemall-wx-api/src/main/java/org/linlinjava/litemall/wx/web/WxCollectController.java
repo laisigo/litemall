@@ -66,10 +66,12 @@ public class WxCollectController {
             c.put("valueId", collect.getValueId());
 
             LitemallGoods goods = goodsService.findById(collect.getValueId());
-            c.put("name", goods.getName());
-            c.put("brief", goods.getBrief());
-            c.put("picUrl", goods.getPicUrl());
-            c.put("retailPrice", goods.getRetailPrice());
+            if(goods!=null){
+                c.put("name", goods.getName());
+                c.put("brief", goods.getBrief());
+                c.put("picUrl", goods.getPicUrl());
+                c.put("retailPrice", goods.getRetailPrice());
+            }
 
             collects.add(c);
         }
